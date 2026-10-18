@@ -32,7 +32,7 @@
 <body>
 <main>
 <h1>Privacy Policy / 隐私政策 — Auto Clicker: Tap &amp; Swipe</h1>
-<p class="meta"><strong>Effective / last updated · 生效及最后更新日期：</strong> 2026-09-28（2026 年 9 月 28 日）· applies from app version 1.0.1 / 适用于 1.0.1 版起</p>
+<p class="meta"><strong>Effective / last updated · 生效及最后更新日期：</strong> 2026-10-18（2026 年 10 月 18 日）</p>
 <nav><a href="#english">English</a> · <a href="#zh-cn">简体中文</a></nav>
 
 <hr>
@@ -45,7 +45,8 @@
 <ul>
 <li>There are no accounts and no ads. We do <strong>not</strong> collect personal information, and we never sell data or use it for advertising.</li>
 <li>Your taps, swipes, recordings and scripts stay on your device. Nothing the Accessibility Service handles is ever collected or sent.</li>
-<li>To understand which features are used and to fix crashes, the app uses <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to collect <strong>anonymous</strong> usage events and crash reports (details below). You can turn this off at any time in <strong>Settings › Privacy › Share anonymous usage data</strong>.</li>
+<li>To understand which features are used and to fix crashes, the app uses <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to collect <strong>anonymous</strong> usage events and crash reports (details below), <strong>but only if you turn it on</strong>. This is <strong>off by default</strong>; you can turn it on or off at any time in <strong>Settings › Privacy › Share anonymous usage data</strong>. While it is off, nothing is sent.</li>
+<li>The app does <strong>not</strong> collect your location, precise or approximate.</li>
 </ul>
 
 <h3>Accessibility Service (AccessibilityService API)</h3>
@@ -61,19 +62,18 @@
 <p>Used only to show the floating control bar, the numbered target markers and the recording layer on top of other apps.</p>
 
 <h3>Anonymous usage data and crash reports (Firebase)</h3>
-<p>The app uses Firebase Analytics and Firebase Crashlytics, services provided by Google, which act as our service provider.</p>
-<h4>What is collected</h4>
+<p>The app uses Firebase Analytics and Firebase Crashlytics, services provided by Google, which act as our service provider. They are <strong>off by default</strong> and run only after you turn on <strong>Settings › Privacy › Share anonymous usage data</strong>.</p>
+<h4>What is collected (only while the switch is on)</h4>
 <ul>
-<li><strong>App-usage events</strong>, for example: the floating bar was shown, playback started or stopped, a recording was saved, a script was saved, selected or deleted, the app language or a setting was changed, a permission was granted. Events only carry counts in ranges (such as "2-5 actions"), durations in ranges, and fixed options (such as tap/swipe, the stop reason, the name of the setting that changed, the chosen app language). The app language is also stored as a user property.</li>
+<li><strong>App interactions (app-usage events)</strong>, for example: the floating bar was shown, playback started or stopped, a recording was saved, a script was saved, selected or deleted, the app language or a setting was changed, a permission was granted. Events only carry counts in ranges (such as "2-5 actions"), durations in ranges, and fixed options (such as tap/swipe, the stop reason, the name of the setting that changed, the chosen app language). The app language is also stored as a user property.</li>
 <li><strong>Crash logs</strong> (stack traces and the app state at the time of the crash) and diagnostics.</li>
-<li><strong>Device information:</strong> device model, Android version, app version and language/region settings.</li>
-<li><strong>Approximate location:</strong> country and city, which Google Analytics derives from your IP address. The app does not request location permission and never collects precise (GPS) location; the IP address itself is used only to derive this and is not stored by Google Analytics.</li>
-<li><strong>The Firebase installation ID</strong>, a random identifier for this installation of the app. It is not linked to your name, email or Google account and is reset when you clear the app's storage or reinstall it.</li>
+<li><strong>Diagnostics / device information:</strong> device model, Android version, app version and language/region settings.</li>
+<li><strong>Device ID: the Firebase installation ID</strong>, a random identifier for this installation of the app. It is not linked to your name, email or Google account and is reset when you clear the app's storage or reinstall it.</li>
 </ul>
 <h4>What is never collected</h4>
 <ul>
 <li>Personal information such as your name, email, phone number or accounts.</li>
-<li>Precise (GPS) location.</li>
+<li>Location of any kind: neither precise (GPS) nor approximate location. The app does not request location permission. As with any internet connection, your IP address is visible to Google's servers when data is sent and may be processed transiently to deliver it; it is not stored by Google Analytics, and we do not collect it or use it to determine your location.</li>
 <li>Anything from the Accessibility Service: screen content, text, tap or swipe positions, gesture paths.</li>
 <li>Which other apps you use or automate (package names), and the names you give your scripts.</li>
 <li>The Advertising ID (the AD_ID permission is removed from the app, and advertising ID, SSAID collection and ad personalization signals are turned off).</li>
@@ -81,7 +81,7 @@
 <h4>How it is used</h4>
 <p>Only to understand how features are used, to improve the app and to find and fix crashes. The data is <strong>not sold</strong>, <strong>not used for advertising</strong>, and not shared with anyone other than Google acting as our service provider. It is sent over encrypted connections (HTTPS).</p>
 <h4>Your choice</h4>
-<p>Usage data sharing is on by default and can be turned off at any time in <strong>Settings › Privacy › Share anonymous usage data</strong>. When it is off, the app sends neither usage events nor crash reports. Debug (developer) builds never send anything.</p>
+<p>Usage data sharing is <strong>off by default</strong>. It is enabled only if you turn on <strong>Settings › Privacy › Share anonymous usage data</strong> yourself, and you can turn it off again at any time. When it is off, the app sends neither usage events nor crash reports. Debug (developer) builds never send anything.</p>
 <h4>Retention and deletion</h4>
 <p>Google Analytics keeps event data for no longer than 14 months; Crashlytics keeps crash reports for 90 days. To ask us to delete data associated with your installation, email <a href="mailto:zhanghang2357@gmail.com"><strong>zhanghang2357@gmail.com</strong></a>.</p>
 <p>Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> · How Google uses data from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
@@ -122,7 +122,8 @@
 <ul>
 <li>没有账号、没有广告。我们<strong>不收集</strong>个人信息，也绝不出售数据或将其用于广告。</li>
 <li>你的点击、滑动、录制和方案都只保存在你的设备上；无障碍服务经手的任何信息都不会被收集或上传。</li>
-<li>为了解功能使用情况、修复崩溃，本应用使用 <strong>Google Firebase Analytics</strong> 和 <strong>Firebase Crashlytics</strong> 收集<strong>匿名</strong>的使用事件和崩溃报告（详见下文）。你可以随时在 <strong>设置 › 隐私 › 共享匿名使用数据</strong> 中关闭。</li>
+<li>为了解功能使用情况、修复崩溃，本应用使用 <strong>Google Firebase Analytics</strong> 和 <strong>Firebase Crashlytics</strong> 收集<strong>匿名</strong>的使用事件和崩溃报告（详见下文），<strong>但只有在你自己打开后才会收集</strong>。该功能<strong>默认关闭</strong>，你可以随时在 <strong>设置 › 隐私 › 共享匿名使用数据</strong> 中打开或关闭；关闭时不发送任何数据。</li>
+<li>本应用<strong>不收集</strong>你的位置信息，无论精确位置还是大致位置。</li>
 </ul>
 
 <h3>无障碍服务（AccessibilityService API）</h3>
@@ -138,19 +139,18 @@
 <p>只用来在其他应用上层显示悬浮控制条、编号目标标记和录制层。</p>
 
 <h3>匿名使用数据和崩溃报告（Firebase）</h3>
-<p>本应用使用 Google 提供的 Firebase Analytics 和 Firebase Crashlytics，Google 作为我们的服务提供方处理这些数据。</p>
-<h4>收集什么</h4>
+<p>本应用使用 Google 提供的 Firebase Analytics 和 Firebase Crashlytics，Google 作为我们的服务提供方处理这些数据。它们<strong>默认关闭</strong>，只有在你打开 <strong>设置 › 隐私 › 共享匿名使用数据</strong> 后才会运行。</p>
+<h4>收集什么（仅在开关打开时）</h4>
 <ul>
-<li><strong>应用使用事件</strong>，例如：显示了悬浮条、开始或停止播放、保存了录制、保存/选择/删除了方案、切换了语言或修改了某项设置、授予了权限。事件里只有分段后的数量（如「2-5 个动作」）、分段后的时长和固定选项（如点击/滑动、停止原因、被修改的设置项名称、所选语言）。所选语言也作为用户属性记录。</li>
+<li><strong>应用互动（使用事件）</strong>，例如：显示了悬浮条、开始或停止播放、保存了录制、保存/选择/删除了方案、切换了语言或修改了某项设置、授予了权限。事件里只有分段后的数量（如「2-5 个动作」）、分段后的时长和固定选项（如点击/滑动、停止原因、被修改的设置项名称、所选语言）。所选语言也作为用户属性记录。</li>
 <li><strong>崩溃日志</strong>（崩溃时的调用栈和应用状态）和诊断信息。</li>
-<li><strong>设备信息：</strong>设备型号、Android 版本、应用版本、语言/地区设置。</li>
-<li><strong>大致位置：</strong>由 Google Analytics 根据你的 IP 地址推断出的国家/地区和城市。本应用不申请定位权限，绝不收集精确（GPS）位置；IP 地址仅用于推断大致位置，Google Analytics 不会保存 IP 地址本身。</li>
-<li><strong>Firebase 安装 ID</strong>：为本次安装随机生成的标识，不与你的姓名、邮箱或 Google 账号关联；清除应用存储或重新安装后会重置。</li>
+<li><strong>诊断 / 设备信息：</strong>设备型号、Android 版本、应用版本、语言/地区设置。</li>
+<li><strong>设备 ID：Firebase 安装 ID</strong>：为本次安装随机生成的标识，不与你的姓名、邮箱或 Google 账号关联；清除应用存储或重新安装后会重置。</li>
 </ul>
 <h4>绝不收集</h4>
 <ul>
 <li>姓名、邮箱、电话、账号等个人信息。</li>
-<li>精确（GPS）位置。</li>
+<li>任何位置信息：既不收集精确（GPS）位置，也不收集大致位置；本应用不申请定位权限。和所有联网传输一样，发送数据时 Google 的服务器会看到你的 IP 地址，并可能为完成传输而临时处理它；Google Analytics 不保存 IP 地址，我们也不收集它，不用它推断你的位置。</li>
 <li>无障碍服务的任何内容：屏幕内容、文字、点击或滑动的位置、手势路径。</li>
 <li>你使用或自动操作的其他应用（包名），以及你给方案起的名字。</li>
 <li>广告 ID（应用已移除 AD_ID 权限，并关闭了广告 ID、SSAID 采集和广告个性化信号）。</li>
@@ -158,7 +158,7 @@
 <h4>用途</h4>
 <p>只用于了解功能使用情况、改进应用、发现和修复崩溃。数据<strong>不出售</strong>、<strong>不用于广告</strong>，除作为服务提供方的 Google 外不与任何人分享；传输全程加密（HTTPS）。</p>
 <h4>你的选择</h4>
-<p>「共享匿名使用数据」默认开启，可随时在 <strong>设置 › 隐私</strong> 中关闭。关闭后，本应用既不发送使用事件，也不发送崩溃报告。调试（开发者）版本任何数据都不发送。</p>
+<p>「共享匿名使用数据」<strong>默认关闭</strong>，只有你自己在 <strong>设置 › 隐私</strong> 中打开后才会启用，之后也可随时关闭。关闭时，本应用既不发送使用事件，也不发送崩溃报告。调试（开发者）版本任何数据都不发送。</p>
 <h4>保留与删除</h4>
 <p>Google Analytics 的事件数据最长保留 14 个月；Crashlytics 的崩溃报告保留 90 天。如需删除与你的安装相关的数据，请发邮件至 <a href="mailto:zhanghang2357@gmail.com"><strong>zhanghang2357@gmail.com</strong></a>。</p>
 <p>Google 隐私政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> · Google 如何使用来自其服务合作方应用的数据：<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
